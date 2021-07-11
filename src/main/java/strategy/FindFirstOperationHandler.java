@@ -9,14 +9,15 @@ import java.io.InputStreamReader;
 
 @Component
 public class FindFirstOperationHandler implements OperationHandler {
-    private static final String path = "src/main/resources/data.txt";
+    private static final String path = "src/main/resources/ecobike.txt";
     @Inject
     FileReaderService fileReaderService;
 
     @Override
     public void apply() {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String brand;
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+        try {
             System.out.println("Write brand:");
             brand = reader.readLine();
         } catch (Exception e) {

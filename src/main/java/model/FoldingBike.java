@@ -77,7 +77,8 @@ public class FoldingBike extends Vehicle {
     public String toString() {
         return "FOLDING BIKE " + brand
                 + " with " + numberOfGears + (numberOfGears == 1 ? " gear" : " gears") + " and "
-                + (hasLightsAtFrontAndBack ? "head/tail lights" : "no head/tail lights");
+                + (hasLightsAtFrontAndBack ? "head/tail lights" : "no head/tail lights")
+                + System.lineSeparator() + "Price: " + price + " euros.";
     }
 
     @Override

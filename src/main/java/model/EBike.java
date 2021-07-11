@@ -77,7 +77,8 @@ public class EBike extends Vehicle {
     public String toString() {
         return "E-BIKE " + brand
                 + " with " + batteryCapacity + " mAh battery and "
-                + (hasLightsAtFrontAndBack ? "head/tail light" : "no head/tail light");
+                + (hasLightsAtFrontAndBack ? "head/tail light" : "no head/tail light")
+                + System.lineSeparator() + "Price: " + price + " euros.";
     }
 
     @Override

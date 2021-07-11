@@ -13,7 +13,7 @@ import java.util.List;
 
 @Component
 public class WriteOperationHandler implements OperationHandler {
-    private static final String path = "src/main/resources/data.txt";
+    private static final String path = "src/main/resources/ecobike.txt";
     @Inject
     VehicleDao vehicleDao;
     @Inject

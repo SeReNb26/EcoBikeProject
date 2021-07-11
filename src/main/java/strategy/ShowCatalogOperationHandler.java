@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 public class ShowCatalogOperationHandler implements OperationHandler {
-    private static final String path = "src/main/resources/data.txt";
+    private static final String path = "src/main/resources/ecobike.txt";
     @Inject
     FileReaderService fileReaderService;
     @Inject

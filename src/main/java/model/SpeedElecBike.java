@@ -77,7 +77,8 @@ public class SpeedElecBike extends Vehicle {
     public String toString() {
         return "SPEEDELEC " + brand
                 + " with " + batteryCapacity + " mAh battery and "
-                + (hasLightsAtFrontAndBack ? "head/tail light" : "no head/tail light");
+                + (hasLightsAtFrontAndBack ? "head/tail light" : "no head/tail light")
+                + System.lineSeparator() + "Price: " + price + " euros.";
     }
 
     @Override
